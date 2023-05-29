@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <style>
+        .image1 {
+            background-repeat: no-repeat;
+            background-size: contain;
+            width: 100%;
+            height: 80%;
+            /* object-fit: cover; */
+        }
+        .element{
+            width: 100%;
+            min-height: 300px;
+            padding:2.5rem 0;  
+        }
+        .root{
+            max-width: 968px;
+            margin-right: auto;
+            margin-left: auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, auto));
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+        form{}
+    </style>
+
+    <body>
+        <h1>Ôn tập Array</h1>
+        <form action="">
+            <input class="input" id="input" type="text" placeholder="search..." oninput="searchFunc()">
+            <input class="submit" type="submit">
+        </form>
+            <div class="root"></div>
+    </body>
+    <script src="./arrayMap.js"></script>
+
+</html>
